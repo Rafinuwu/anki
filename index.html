@@ -5,7 +5,7 @@
     <style>
         body {
             background-color: #F4C2C2; /* Baby Pink Color Code */
-            font-family: Arial, sans-serif;
+            font-family: 'Creepster', cursive, Arial, sans-serif; /* Use the 'Creepster' font for the title */
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -16,12 +16,27 @@
 
         h1 {
             margin-top: 30px;
+            font-size: 48px; /* Increase the font size for the title */
+            text-shadow: 0 0 10px #FF00FF, 0 0 20px #FF00FF, 0 0 30px #FF00FF; /* Add neon glow effect to the title */
         }
 
         p {
             font-size: 18px;
             line-height: 1.6;
             margin: 30px;
+        }
+
+        .funeral-graphics {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .skull-cross {
+            width: 50px; /* Adjust the size of the skull and cross graphics */
+            height: 50px;
+            margin: 10px;
         }
 
         label {
@@ -37,8 +52,8 @@
         }
 
         #countdown {
-            font-size: 48px; /* Adjust the font size to make it bigger */
-            text-shadow: 0 0 10px #FF00FF, 0 0 20px #FF00FF, 0 0 30px #FF00FF; /* Add neon glow effect */
+            font-size: 36px; /* Adjust the font size to make it bigger */
+            text-shadow: 0 0 10px #FF00FF, 0 0 20px #FF00FF, 0 0 30px #FF00FF; /* Add neon glow effect to the countdown */
             margin-top: 30px;
         }
 
@@ -50,9 +65,14 @@
             display: block;
         }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet"> <!-- Import the 'Creepster' font from Google Fonts -->
 </head>
 <body>
-    <h1>Ankita's Funeral Countdown</h1>
+    <div class="funeral-graphics">
+        <div class="skull-cross">&#9760;</div> <!-- Add skull and cross symbols using Unicode characters -->
+        <h1>Ankita's Funeral Countdown</h1>
+        <div class="skull-cross">&#9760;</div>
+    </div>
     <p id="countdown"></p> <!-- Move the countdown to the top -->
     <p>Ankita, a friend, a mother, a caring soul, someone who I could rely on and trust more than myself. Maybe we will meet once in the afterlife in hell, but until we're together let's cherish every moment we have. And the best way to do it is to remember when we will be gone:</p>
     <iframe src="//imgur.com/a/ZoAPNbX/embed?pub=true"></iframe>
