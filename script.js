@@ -32,8 +32,8 @@
                 document.getElementById("countdown").style.fontSize = "36px"; // Reduce font size
                 document.getElementById("countdown").style.color = "#0F0"; // Green text
                 document.getElementById("countdown").style.textShadow = "none"; // Remove text shadow
-                clearInterval(countdownInterval); // Stop the countdown interval
                 buzzEffect(); // Call the buzz effect function
+                clearInterval(countdownInterval); // Stop the countdown interval
             }
         }
     }
