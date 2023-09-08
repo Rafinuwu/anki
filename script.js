@@ -21,6 +21,9 @@
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
+            // Display the countdown
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+
             // Check if the countdown is at 1095 days, 59 minutes, and 57 seconds
             if (days === 1095 && hours === 23 && minutes === 59 && seconds === 57) {
                 // Apply the "hacker effect" by changing the background color and text
@@ -31,13 +34,6 @@
                 document.getElementById("countdown").style.textShadow = "none"; // Remove text shadow
                 clearInterval(countdownInterval); // Stop the countdown interval
                 buzzEffect(); // Call the buzz effect function
-            } else {
-                // Display the regular countdown
-                document.body.style.backgroundColor = "#F4C2C2"; // Reset background color
-                document.getElementById("countdown").style.fontSize = "48px"; // Reset font size
-                document.getElementById("countdown").style.color = "#FF00FF"; // Reset text color
-                document.getElementById("countdown").style.textShadow = "0 0 10px #FF00FF, 0 0 20px #FF00FF, 0 0 30px #FF00FF"; // Reset text shadow
-                document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s";
             }
         }
     }
